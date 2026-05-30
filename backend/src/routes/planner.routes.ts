@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import multer from 'multer';
-import { generatePlanner, getPlanners } from '../controllers/planner.controller';
+import { generatePlanner, getPlanners } from '../controllers/planner.controller.js';
 
 const router = Router();
 

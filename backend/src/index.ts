@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import plannerRoutes from './routes/planner.routes';
+import plannerRoutes from './routes/planner.routes.js';
 import mongoose from 'mongoose';
 
 dotenv.config();

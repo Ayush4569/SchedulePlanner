@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
-import { PlannerSchema } from '../schemas/planner.schema';
-import type { PlannerType } from '../schemas/planner.schema';
+import { PlannerSchema } from '../schemas/planner.schema.js';
+import type { PlannerType } from '../schemas/planner.schema.js';
 
 export const generateWeeklyPlanner = async (extractedText: string): Promise<PlannerType> => {
   const apiKey = process.env.GEMINI_API_KEY;

@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express';
-import { extractTextFromPdf } from '../services/pdf.service';
-import { generateWeeklyPlanner } from '../services/gemini.service';
-import Planner from '../models/Planner.model';
+import { extractTextFromPdf } from '../services/pdf.service.js';
+import { generateWeeklyPlanner } from '../services/gemini.service.js';
+import Planner from '../models/Planner.model.js';
 
 export const generatePlanner = async (req: Request, res: Response) => {
   try {
